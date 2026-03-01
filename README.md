@@ -20,14 +20,14 @@ Picture this: You are at the peak of your coding flow (Closed-door cultivation).
 graph TD
     A[Coding at 2 AM...] --> B{AI: 'Quota Exceeded!'}
     
-    B -- The Mortal Way (Noob) --> C[Cry & Curse the AI gods]
+    B -- The Mortal Way --> C[Cry & Curse the AI gods]
     C --> D[Manually copy-paste 20 files]
     D --> E[New AI: 'I forgot the context...']
-    E --> F[Brain Explodes 💥 / Sleep at 5 AM]
+    E --> F[Brain Explodes 💥]
 
-    B -- The AgentPass Way (Tech Boss) 🪄 --> G[/checkpoint]
-    G --> H[Teleport .rsp3 state to Cursor/ChatGPT]
-    H --> I[/resume latest]
+    B -- The AgentPass Way 🪄 --> G("/checkpoint")
+    G --> H[Teleport .rsp3 state to New AI]
+    H --> I("/resume latest")
     I --> J[Seamless Continuation. Boss Level Achieved 🚀]
     
     style G fill:#2ecc71,stroke:#27ae60,stroke-width:2px,color:#fff
