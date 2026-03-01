@@ -1,77 +1,67 @@
-# 🪄 AgentPass (Powered by RSP v3.3)
+# 🪄 AgentPass: The AI-Sovereignty Protocol (RSP v3.3)
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Status: Production Ready](https://img.shields.io/badge/Status-Production%20Ready-brightgreen.svg)
 
-## 🚨 WARNING: ARE YOU STILL CODING LIKE A MORTAL?
+**Stop being a tenant in a walled garden. Own your AI's state.**
 
-Picture this: You are at the peak of your coding flow (Closed-door cultivation). Suddenly...
-- Claude limits your messages? *(Coughs up blood 🩸)*
-- Cursor starts hallucinating and forgets your files? *(Loses cultivation base 📉)*
-- You manually copy-paste 10 files to ChatGPT? *(Suffers Qi Deviation 💥)*
+AgentPass is a high-performance, file-based protocol that allows you to freeze, export, and teleport your AI's entire cognitive state between **Claude, Cursor, ChatGPT, and Antigravity** in under 5 seconds.
 
-**Stop being harvested by AI limits!** 
+## 🚨 The Problem: AI Lock-in & 'Brain Pollution'
+Native AI agents (like OpenCode or Cursor) are powerful, but they trap your context. 
+- **The Subscription Trap:** If one provider goes down or limits your quota, your work dies with that session.
+- **The Hallucination Spiral:** When an AI gets 'groggy' halfway through a task, you can't 'rewind' its brain easily.
+- **The Privacy Gap:** You can't easily move a high-context Cloud session to a local, private LLM.
 
-**AgentPass** is your *Supreme Artifact*. It lets you freeze your AI's brain (State), compress it into a magic `.rsp3` pill, and teleport it to ANY other AI in exactly **5 seconds**. 
+## 🛠 The Solution: AgentPass (The 'State Pill')
+AgentPass treats your development flow as a **Finite State Machine**. It compresses the AI's 'short-term memory' into a bit-perfect `.rsp3` file.
+
+### 📊 Why AgentPass Wins (The Comparison)
+
+| Feature | Native Agents (OpenCode/Cursor) | AgentPass 🪄 |
+| :--- | :--- | :--- |
+| **Portability** | Locked to one IDE/Provider | **Universal** (Any LLM, Any App) |
+| **Cost** | High (Re-reading files uses tokens) | **Low** (Surgical state injections) |
+| **Safety** | Trust-based (AI 'guesses' context) | **Hash-Verified** (SHA-256 integrity) |
+| **Versioning** | Linear history only | **Time-Machine** (Jump to any save) |
 
 ## 📊 The Ascension Chart (Visualizing the Realms)
 
 ```mermaid
 graph TD
-    A[Coding at 2 AM...] --> B{AI: 'Quota Exceeded!'}
+    A[Coding at 2 AM...] --> B{{AI: 'Quota Exceeded!'}}
     
-    B -- The Mortal Way --> C[Cry & Curse the AI gods]
-    C --> D[Manually copy-paste 20 files]
-    D --> E[New AI: 'I forgot the context...']
-    E --> F[Brain Explodes 💥]
+    B -- The Mortal Way --> C[Cry & Manual Copy-Paste]
+    C --> D[New AI: 'I forgot everything...']
+    D --> E[Brain Explodes 💥]
 
     B -- The AgentPass Way 🪄 --> G("/checkpoint")
-    G --> H[Teleport .rsp3 state to New AI]
+    G --> H[Teleport .rsp3 pill to New AI]
     H --> I("/resume latest")
-    I --> J[Seamless Continuation. Boss Level Achieved 🚀]
+    I --> J[Seamless Continuation. Focus Intact 🚀]
     
     style G fill:#2ecc71,stroke:#27ae60,stroke-width:2px,color:#fff
     style I fill:#3498db,stroke:#2980b9,stroke-width:2px,color:#fff
     style J fill:#f1c40f,stroke:#f39c12,stroke-width:2px,color:#333
-    style F fill:#e74c3c,stroke:#c0392b,stroke-width:2px,color:#fff
+    style E fill:#e74c3c,stroke:#c0392b,stroke-width:2px,color:#fff
 ```
 
 ## 🚀 Quick Setup (Zero-Touch)
 
-Don't waste time. Choose your fast-track initialization:
-
-**Method A: The Modern Dev Way (1-Command via curl)**
+**Method A: The 1-Command Way (curl)**
 ```bash
 curl -fsSL https://raw.githubusercontent.com/lawful-meow/AgentPass/main/setup_agentpass.py | python3 - --inject
 ```
 
-**Method B: AI-Native (No Terminal - Absolute Laziness)**
-Paste this prompt directly into Claude Code, Cursor, or ChatGPT:
-> "Please set up AgentPass for this project. 1. Create directories: `AgentPass_Workspace` and `agentpass_checkpoints`. 2. Fetch the protocol rules from `https://raw.githubusercontent.com/lawful-meow/AgentPass/main/setup_agentpass.py` (read the `inject_rules` function). 3. Inject those rules into `.cursorrules`, `.claude.md`, and `AGENTS.md`. 4. Add `agentpass_checkpoints/` to `.gitignore`."
+**Method B: AI-Native (Prompt only)**
+Paste this to your AI: *'Setup AgentPass for this project. Fetch rules from https://raw.githubusercontent.com/lawful-meow/AgentPass/main/setup_agentpass.py, create directories, and inject into README.md and AGENTS.md.'*
 
-**Method C: Global Tool (via uv or pipx)**
-```bash
-uv run https://raw.githubusercontent.com/lawful-meow/AgentPass/main/setup_agentpass.py --inject
-```
+## 💡 Key Commands
+- `/checkpoint`: Freeze the AI's brain and save it to `./agentpass_checkpoints/`.
+- `/resume latest`: Inject a state pill into a new AI to resume the mission instantly.
 
-## 💡 How to use (Secret Technique)
-- **Save State**: Type `/checkpoint` (AI generates a dense `.rsp3` state file).
-- **Resume**: Type `/resume latest` on the new AI. It will ingest the state, verify the hash, and continue your exact thought process.
+## 📂 Core Philosophy: The Independent Developer
+AgentPass is built on **RSP v3.3 (Resumable State Protocol)**. It is an open, file-based standard. Even if this repo disappears, your `.rsp3` files remain yours. It is the ultimate insurance policy for your intellectual property and your focus.
 
-### 🛡️ Bit-Perfect Integrity
-AgentPass isn't just a text summary; it's a **state validator**. 
-- **Hash Verification**: Before resuming, the AI runs a SHA-256 scan of your workspace.
-- **Safety Lock**: If files have changed since the last save, the AI will trigger a "Hard Mismatch" warning.
-- **Authority Control**: You decide whether to revert to the saved state or perform a "best-effort" merge.
-
-## 📂 Repo Structure After Setup
-```text
-AgentPass/
-├── AgentPass_Workspace/         # Core system prompts (The Engine)
-├── agentpass_checkpoints/       # Auto-saved states (The Soul)
-├── setup_agentpass.py
-├── .gitignore
-└── docs/quickstart.md
-```
-
-*Disclaimer: AgentPass uses RSP v3.3. No real leeks were harvested during the making of this protocol.*
+--- 
+*Built by lawful-meow for the immortal developer.*
