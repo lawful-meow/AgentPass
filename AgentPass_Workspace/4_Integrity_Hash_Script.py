@@ -8,12 +8,12 @@ EXCLUDE_EXTS = {'.rsp3', '.lock', '.log'}
 def compute_integrity_hash(directory='.'):
     hasher = hashlib.sha256()
     root_path = Path(directory).resolve()
-    
+   
     for root, dirs, files in os.walk(root_path):
         dirs[:] = [d for d in dirs if d not in EXCLUDE_DIRS]
         dirs.sort()
         files.sort()
-        
+       
         for file in files:
             if any(file.endswith(ext) for ext in EXCLUDE_EXTS):
                 continue

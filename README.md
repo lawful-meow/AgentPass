@@ -61,8 +61,8 @@ uv run https://raw.githubusercontent.com/lawful-meow/AgentPass/main/setup_agentp
 ## 📂 Repo Structure After Setup
 ```text
 AgentPass/
-├── AgentPass_Workspace/         # Core system prompts (The Engine)
-├── agentpass_checkpoints/       # Auto-saved states (The Soul)
+├── AgentPass_Workspace/         # Core system prompts (The Engine)
+├── agentpass_checkpoints/       # Auto-saved states (The Soul)
 ├── setup_agentpass.py
 ├── .gitignore
 └── docs/quickstart.md
