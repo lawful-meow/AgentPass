@@ -58,6 +58,12 @@ uv run https://raw.githubusercontent.com/lawful-meow/AgentPass/main/setup_agentp
 - **Save State**: Type `/checkpoint` (AI generates a dense `.rsp3` state file).
 - **Resume**: Type `/resume latest` on the new AI. It will ingest the state, verify the hash, and continue your exact thought process.
 
+### 🛡️ Bit-Perfect Integrity
+AgentPass isn't just a text summary; it's a **state validator**. 
+- **Hash Verification**: Before resuming, the AI runs a SHA-256 scan of your workspace.
+- **Safety Lock**: If files have changed since the last save, the AI will trigger a "Hard Mismatch" warning.
+- **Authority Control**: You decide whether to revert to the saved state or perform a "best-effort" merge.
+
 ## 📂 Repo Structure After Setup
 ```text
 AgentPass/
